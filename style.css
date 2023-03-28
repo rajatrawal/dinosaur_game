@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.gameOver{
+    visibility: hidden;
+
+    font-size: 4rem;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+}
+.gameCointer{
+    background: url("bg.png") no-repeat;
+    background-size:100vw 100vh ;
+    width: 100%;
+    height: 100vh;
+}
+.scoreCont{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  float: right;
+  font-size: 3rem;
+  padding: 3rem;
+  text-decoration: underline;
+ 
+}
+.dino{
+    background: url("dino.png") no-repeat;
+    width: 200px;
+    height: 100px;
+    background-size: cover;
+    position: absolute;
+    bottom: .3%;
+    left: 15px;
+ 
+}
+.obstacle{
+    background: url("dragon.png") no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 100px;
+    position:absolute;
+    bottom: .3%;
+    left: 50vw;
+    
+}
+.drgonObstcle{
+    animation: drgonObstcle linear infinite 3s;
+}
+.animateDino{
+    animation: dino .7s linear;
+}
+@keyframes dino{
+    0%{
+        bottom: 1%;
+    }
+    50%{
+        bottom: 40%;
+    }
+    100%{
+        bottom: 1%;
+    }
+}
+@keyframes drgonObstcle{
+    0%{
+        left: 100vw;
+    }
+   
+    100%{
+        left: -10vw;
+    }
+}
