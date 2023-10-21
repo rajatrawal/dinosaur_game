@@ -16,7 +16,7 @@ body{
     display: inline-block;
 }
 .gameCointer{
-    background: url("bg.png") no-repeat;
+    background: url("images/bg.png") no-repeat;
     background-size:100vw 100vh ;
     width: 100%;
     height: 100vh;
@@ -30,7 +30,7 @@ body{
  
 }
 .dino{
-    background: url("dino.png") no-repeat;
+    background: url("images/dino.png") no-repeat;
     width: 200px;
     height: 100px;
     background-size: cover;
@@ -40,7 +40,7 @@ body{
  
 }
 .obstacle{
-    background: url("dragon.png") no-repeat;
+    background: url("images/dragon.png") no-repeat;
     background-size: cover;
     width: 150px;
     height: 100px;
